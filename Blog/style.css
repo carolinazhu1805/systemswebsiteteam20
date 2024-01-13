@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.top{
+    height: 130px;
+}
+#title{
+    margin: 30px;
+
+}
+#ucl{
+    text-decoration: none;
+    color:  #DB0042;
+}
+#ucl:hover{
+    color: gray;
+}
+
+.blog{
+    height: 200px;
+}
+
+.week{
+    text-decoration: none;
+    color:  black;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.week:hover{
+    text-decoration: underline;
+    color: #DB0042;
+}
+
+.summary{
+    text-indent: 790px;
+    color: grey;
+    font-size: 20px;
+}
