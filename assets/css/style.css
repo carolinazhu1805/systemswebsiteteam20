@@ -44,7 +44,7 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #37517e;
+  background: #edf4ff;
 }
 
 #preloader:before {
@@ -52,13 +52,13 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #37517e;
+  border: 6px solid #edf4ff;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 2s linear infinite;
 }
 
 @keyframes animate-preloader {
@@ -115,7 +115,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: rgba(40, 58, 90, 0.9);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 #header .logo {
@@ -343,7 +343,7 @@ h6 {
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
   margin: 15px;
-  color: #37517e;
+  color: #21252a;
 }
 
 .navbar-mobile .dropdown ul {
@@ -539,7 +539,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #37517e;
+  color: #242424;
 }
 
 .section-title h2::before {
@@ -603,6 +603,7 @@ section {
   font-size: 26px;
 }
 
+
 .about .content ul {
   list-style: none;
   padding: 0;
@@ -656,14 +657,14 @@ section {
 # Why Us
 --------------------------------------------------------------*/
 .why-us .content {
-  padding: 60px 100px 0 100px;
+  padding: 0; /* Adjust this value based on the actual padding of the .about .content, if any */
 }
 
 .why-us .content h3 {
-  font-weight: 400;
-  font-size: 34px;
-  color: #37517e;
+  font-weight: 600; /* Match the font weight */
+  font-size: 26px; /* Matched to About Us */
 }
+
 
 .why-us .content h4 {
   font-size: 20px;
@@ -1033,6 +1034,22 @@ section {
 .portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
 }
+
+.persona-image {
+  width: 100%; /* Makes the image responsive and fills the container */
+  object-fit: cover; /* Adjusts the image's fit within its box without stretching it */
+}
+
+/* Initially hide elements with the 'hide' class */
+.hide {
+  display: none;
+}
+
+/* Show elements with the 'show' class */
+.show {
+  display: block;
+}
+
 
 /*--------------------------------------------------------------
 # Portfolio Details
@@ -1615,7 +1632,7 @@ section {
 .breadcrumbs h2 {
   font-size: 28px;
   font-weight: 600;
-  color: #37517e;
+  color: #3b3d41;
 }
 
 .breadcrumbs ol {
@@ -1634,7 +1651,7 @@ section {
 .breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #4668a2;
+  color: #7f858f;
   content: "/";
 }
 
@@ -1643,7 +1660,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
   font-size: 14px;
-  background: #37517e;
+  background: #000000;
 }
 
 #footer .footer-newsletter {
@@ -1660,7 +1677,7 @@ section {
   padding: 0;
   line-height: 1;
   font-weight: 600;
-  color: #37517e;
+  color: #000000;
 }
 
 #footer .footer-newsletter form {
@@ -1715,7 +1732,7 @@ section {
   line-height: 1;
   text-transform: uppercase;
   font-weight: 600;
-  color: #37517e;
+  color: #4c4c4c;
 }
 
 #footer .footer-top .footer-contact p {
@@ -1729,7 +1746,7 @@ section {
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #37517e;
+  color: #000000;
   position: relative;
   padding-bottom: 12px;
 }
@@ -1828,4 +1845,65 @@ section {
   #footer .credits {
     padding-top: 4px;
   }
+}
+
+
+.button-container button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #47b2e4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: #3592c4;
+}
+
+.logo-flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 10px;
+  width: 50px;
+  height: auto;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+}
+
+.carousel-slide img {
+  max-width: 100%;
+  display: block;
+}
+
+#prevBtn, #nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 100;
+}
+
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
 }
